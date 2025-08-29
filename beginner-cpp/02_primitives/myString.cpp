@@ -15,7 +15,5 @@ int teaQauntity;
  cout<<"whats should i eat ?\n";
  getline(cin,userTea);
 
- 
-
     return 0;
 }
