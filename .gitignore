@@ -18,10 +18,13 @@ bin/
 
 # VS Code editor settings
 # Ignore user-specific state, but allow sharing of common configs
-.vscode/*
+.vscode/
 !/.vscode/settings.json
 !/.vscode/tasks.json
 !/.vscode/launch.json
 
 # Log files
 *.log
+
+tempCodeRunnerFile.cpp
+
