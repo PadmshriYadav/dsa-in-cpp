@@ -8,8 +8,10 @@ using namespace std;
 
 
 int main(){
- int x = 10;
- int *ptr = &x; // &x gets the address ,x to store in ptr
+ int x = 10;//value of x
+ int *ptr = &x; // &x gets the memory address of x (07xffeertgyftf)
+ //*ptr.declaration...value 
+ //&ptr....address of the pointer variable ptr , not the address it's pointing (&x)
 
 
 
@@ -21,6 +23,10 @@ int main(){
 
 int marks[]={25,12,31};
 
+cout<< marks<<"\n";//0x7ffee142b6a8
+cout<< &marks<<"\n";//0x7ffee142b6a8
+
+
 cout<< *marks<<"\n";//25
 
 cout<<*marks+1<<"\n";//26
@@ -28,7 +34,7 @@ cout<<*marks+1<<"\n";//26
 cout<<*(marks+1)<<"\n";//12
 
 
-//new address is ptr + (n * sizeof(data_type))
+//new address =  ptr + (n * sizeof(data_type))
 
   
 
