@@ -16,13 +16,13 @@ class Dog {
      vector<string> treat;
      int age;
 
-     // without parametr constructor
-     Dog(){          
-     name = "nameless" ;
+     // with parametr constructor
+     Dog( string dogName, vector<string> dogTreat,int dogAgw){          
+     name = dogName;
           
-     treat = {"sweet","bun"};
+     treat =  dogTreat ;
           
-     age = 1;
+     age = dogAgw;
     cout<<"constructor called"<< endl;
 
      }
@@ -41,28 +41,8 @@ class Dog {
 
 int main (){
     //object
-    Dog dog1;
-    dog1.name = "mini" ;
-    dog1.treat = {"a","b","c"};
-    dog1.age = 3;
+    Dog dog1("mini",{"a","b","c"},3);
     dog1.aboutDogs();
 
-    cout << "\n\n";
-
-    Dog dog3;
-    dog3.name ="silly";
-     dog3.aboutDogs();
-    return 0;
 }
 
-
-// constructor called
-// mini barks like a bird !!.
-//  her/his age is:3
-// treats :a b c
-
-
-// constructor called
-// silly barks like a bird !!.
-//  her/his age is:1
-// treats :sweet bun
