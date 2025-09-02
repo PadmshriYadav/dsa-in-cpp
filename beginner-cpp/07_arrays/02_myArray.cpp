@@ -2,34 +2,38 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 //doesnt work
     
-// void askYouColor(string color[] , int num ){
+void addColor(string color[] , int num ){
      
-//     for ( int i = 0 ; i< num ; i++){
-//         cout<<"the"<<i+1<<" color should be:"<<"\n";
-//         string userColor;
-//         getline(cin,userColor);
+    for ( int i = 0 ; i< num ; i++){
+        cout<<"the"<<i+1<<" color should be:";
+        string userColor;
+        getline(cin,userColor);
 
-//         color[i]= userColor;
+        color[i]= userColor;
+         cout<<"\n";
 
-//     }
+     
+
+    }
   
-// }
+}
 using namespace std;
 int main(){
-//     int num;
-//     cout << "enter  no of ur color :\n";
-//     cin>>num;
 
-//    string name [num];
+    int num;
+    cout << "enter  no of ur color :";
+    cin>>num; // cin leaves \n.. cin.ignore()
+    cin.ignore();
+    
+   string colorName [num];
 
-//     askYouColor(name,num);
+    addColor(colorName,num);
 
-//     cout << "\nYour colors are:\n";
-//     for (int i = 0; i < num.size(); i++) {
-//         cout << name[i] << "\n";
-//     }
+  
     return 0;
 }
 
