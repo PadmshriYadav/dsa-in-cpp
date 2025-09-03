@@ -14,12 +14,12 @@ class Vehicle{
      Vehicle( const string& n, int c,int w): name(n),code(c),wheels (w){}  
     
      //friend function declaration
-     friend void displayVehicle( const Vehicle& v)
+     friend void displayVehicle( const Vehicle& v);
 
  }; 
     //friend function defini
     void displayVehicle( const Vehicle& other){
-        cout<< other.name <<" have"<<other.wheels<<"no of wheels"<<"\n";
+        cout<< other.name <<" have "<<other.wheels<<"no of wheels."<<"\n";
     }
 
 
