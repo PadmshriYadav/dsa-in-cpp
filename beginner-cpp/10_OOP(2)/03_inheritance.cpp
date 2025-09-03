@@ -2,8 +2,6 @@
 //= 0 to a virtual function's declaration makes it a pure virtual function
 
 
-
-
 #include <iostream>
 #include <string>
 
@@ -36,19 +34,15 @@ class Kids: public Books{
      void bookGenre() const override /* final*/{
         cout<<"this kids book named "<<bookName<<" is "<< genre<<endl;
 
-
-
      }
+    };
 
-};
 
 class Teenager: public Kids{
     public:
     
      void bookGenre() const override  {
         cout<<"this teenager book named "<<bookName<<" is "<< genre<<endl;
-
-
 
      }
 
