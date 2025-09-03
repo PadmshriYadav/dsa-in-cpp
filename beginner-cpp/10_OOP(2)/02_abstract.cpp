@@ -39,3 +39,7 @@ int main(){
 
     return 0;
 }
+
+//Any class that inherits from Shape must provide its own area,permi,surfacemfunction.
+
+// You cannot create an object of Shape directly because it's incomplete.
