@@ -33,8 +33,20 @@ class Kids: public Books{
         cout<<"this book is:"<<bookName<<endl;
         cout<<"this book have been written in"<<year<<endl;
      }
-     void bookGenre() const override {
+     void bookGenre() const override /* final*/{
         cout<<"this kids book named "<<bookName<<" is "<< genre<<endl;
+
+
+
+     }
+
+};
+
+class Teenager: public Kids{
+    public:
+    
+     void bookGenre() const override  {
+        cout<<"this teenager book named "<<bookName<<" is "<< genre<<endl;
 
 
 
@@ -50,9 +62,15 @@ int main() {
 
     
     kidsBook.about();  // inherited from the base class
-    kidsBook.bookGenre();
+    kidsBook.bookGenre();//this kids book named three pigs is funny
     kidsBook.aboutBook(); // specific to the derived class
     
+   Teenager teen1;
+   teen1.bookName = "three house";
+    teen1.genre = "expensive-boring";
+    teen1.bookGenre();
+     teen1.about();
+   
     return 0;}
 
 //parent class VS abstract class
